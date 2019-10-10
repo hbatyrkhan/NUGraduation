@@ -11,9 +11,9 @@ public class NURunner {
 	public JFrame window;
 	public Display display;
 	public Common common;
-	private NURunner(String mapPath) {
+	private NURunner(String mapPath, int windowWidth, int windowHeight) {
 		this.window = new JFrame();
-		this.common = new Common(mapPath, 1200, 700);
+		this.common = new Common(mapPath, windowWidth, windowHeight);
 		this.display = new Display(this.common);
 		this.window.add(this.display);
 		this.window.setTitle("NU Graduation");
@@ -23,7 +23,8 @@ public class NURunner {
 		this.window.setVisible(true);
 	}
 	public static void main(String[] args) {
-		final NURunner runner = new NURunner("../NUMap-Faded.jpg");
+		int windowWidth = 1200, windowHeight = 700;
+		final NURunner runner = new NURunner("../NUMap-Faded.jpg", windowWidth, windowHeight);
 		Timer timer = new Timer(10, new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent ae) {
