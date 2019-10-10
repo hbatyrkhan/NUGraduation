@@ -12,3 +12,7 @@ java NURunner
 
 ##### Here is the UML Diagram of the project
 ![UML Diagram that the project based on](/ClassDiagram.jpg)
+
+##### Model screenshots of the project
+![Screenshot1](/Screenshot1.jpg)
+![Screenshot2](/Screenshot2.jpg)
